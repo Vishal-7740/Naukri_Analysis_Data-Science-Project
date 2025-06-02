@@ -1,136 +1,136 @@
-# Naukri_Analysis_Data-Science-Project
-Project Overview
-This project analyzes job postings from Naukri.com to understand current job market trends, including top hiring companies, in-demand skills, experience requirements, and salary trends. The analysis aims to provide data-driven insights for both job seekers and HR professionals.
 
-Key Objectives
-Analyze job postings to identify market trends
+📊 Naukri Job Market Analysis 
 
-Extract insights about top companies, skills, experience, and salaries
 
-Provide actionable insights for job seekers and HR professionals
+---
 
-Dataset
-Source: Naukri.csv
+## **🎯 Key Objectives**  
+✔ **Analyze job postings** to identify market trends  
+✔ **Extract insights** on top companies, skills, experience, and salaries  
+✔ **Help job seekers** align skills with industry demands  
+✔ **Assist HR professionals** in benchmarking hiring trends  
 
-Size: 560 job listings
+---
 
-Key Columns:
+## **📂 Dataset**  
+📌 **Source:** `Naukri.csv`  
+📌 **Size:** **560 job listings**  
+📌 **Key Features:**  
+- **Company**  
+- **Experience** (Years)  
+- **Location**  
+- **Ratings**  
+- **Salary** (Range)  
+- **Skills**  
+- **Job Title**  
 
-Company
+---
 
-Experience
+## **🔍 Methodology**  
 
-Location
+### **1. Data Preprocessing**  
+- Handled **missing values, duplicates, and inconsistent formats**  
+- Cleaned **salary ranges, experience fields, and multi-value skills**  
+- Standardized **categorical data** for analysis  
 
-Ratings
+### **2. Exploratory Data Analysis (EDA)**  
+🔹 **Univariate Analysis** (Single-variable trends)  
+🔹 **Bivariate Analysis** (Relationships between variables)  
 
-Salary
+### **3. Feature Engineering**  
+- Extracted **skills** using tokenization and keyword matching  
+- Encoded **categorical variables** (Label Encoding)  
+- Normalized **numerical features** (Standard Scaler)  
 
-Skills
+### **4. Model Building & Evaluation**  
+- **Algorithms Tested:**  
+  - **Logistic Regression**  
+  - **Random Forest**  
+  - **SVM**  
+  - **Gradient Boosting**  
+- **Best Model:** **Random Forest** (tuned with `GridSearchCV`)  
+- **Evaluation Metrics:**  
+  - **Accuracy Score**  
+  - **Precision, Recall, F1-Score**  
 
-Title
+### **5. Model Deployment**  
+- Built a **Streamlit interface** for real-time predictions  
 
-Methodology
-Data Understanding & Preprocessing
+---
 
-Cleaned unstructured fields (salary ranges, experience, multi-value skills)
+## **💡 Key Insights**  
 
-Standardized inconsistent formats
+### **📌 Hiring Trends**  
+- **Top Companies:** **Accenture (30%)**, Oracle (10%), BNY Mellon (6.7%)  
+- **Most In-Demand Roles:**  
+  - **Finance Analyst (43.3%)**  
+  - **Senior Analyst**  
+  - **Research Analyst**  
 
-Extracted skills using tokenization and keyword matching
+### **📌 Skills in Demand**  
+- **Technical:** Python, SQL, Machine Learning, AWS  
+- **Finance:** Financial Analysis, Financial Reporting  
 
-Exploratory Data Analysis (EDA)
+### **📌 Salary & Ratings**  
+- **Salary:** Mostly **Medium-range**  
+- **Company Ratings:** **4.0–4.5** (fewer reviews for highly-rated firms)  
 
-Univariate and bivariate analysis
+---
 
-Visualization of key trends
+## **⚠ Challenges Faced**  
+- **Inconsistent Data Formats**  
+- **High Dimensionality**  
+- **Limited Skill Extraction**  
+- **Overfitting Risk**  
 
-Model Building
+---
 
-Data split into 77% training and 23% testing
+## **🚀 Future Improvements**  
+- **Advanced NLP for Skill Extraction**  
+- **Handling Class Imbalance**  
+- **Cloud Integration**  
 
-Standard Scaler for normalization
+---
 
-Label encoding for categorical variables
+## **📂 Repository Structure**  
+```
+📁 Naukri_Job_Analysis/  
+├── data/  
+│   └── Naukri.csv  
+├── notebooks/  
+│   ├── Data_Preprocessing.ipynb  
+│   ├── EDA.ipynb  
+│   └── Model_Training.ipynb  
+├── models/  
+│   └── random_forest_model.pkl  
+├── app/  
+│   └── streamlit_app.py  
+└── README.md  
+```
 
-Multiple classification models tested (Logistic Regression, Random Forest, SVM)
+---
 
-Hyperparameter tuning with GridSearchCV
+## **🔗 Get Started**  
+```bash
+streamlit run app/streamlit_app.py
+```
 
-Model Deployment
+---
 
-Streamlit interface for no-code predictions
+**📧 Contact:** [Your Email] | **🔗 LinkedIn:** [Your Profile]  
 
-Generic framework for both regression and classification problems
+---  
 
-Key Findings
-Job Market Trends
-Top Hiring Companies: Accenture leads with 30% of postings, followed by Oracle (10%) and BNY Mellon (6.7%)
+🚀 **Happy Job Hunting!** 🚀  
 
-Top Job Titles: Finance Analyst (43.3%), Senior Analyst, Research Analyst
+---
 
-Experience Requirements: Most postings target mid-level professionals (2-5 years experience)
+### **Key Highlights**  
+✅ **Finance & Analytics roles dominate**  
+✅ **Python, SQL, Financial Skills** are critical  
+✅ **Random Forest** outperformed other models  
+✅ **Streamlit** makes insights accessible  
 
-Top Locations: Chennai, Mumbai, Pune, Hyderabad dominate tech hiring
+---
 
-Skills in Demand
-Technical Skills: Python, SQL, Machine Learning, AWS
-
-Finance Skills: Financial analysis, financial reporting, finance expertise
-
-Salary and Ratings
-Most salaries fall in the Medium range
-
-Company ratings clustered between 4.0-4.5
-
-High-rated companies generally have fewer reviews
-
-Model Performance
-Best Performing Models: Random Forest and Gradient Boosting
-
-Evaluation Metrics: Accuracy score and classification report (precision, recall, F1-score)
-
-Improvements: Feature importance analysis and handling class imbalance could enhance performance
-
-Challenges Faced
-Inconsistent data formats in experience, salary, and skills fields
-
-High dimensional categorical variables
-
-Basic skill extraction logic that may miss variations
-
-Overfitting risk with small dataset (560 rows)
-
-Future Improvements
-Enhance skill extraction with more sophisticated NLP techniques
-
-Address class imbalance in the dataset
-
-Add performance metrics to the deployment interface
-
-Incorporate feature engineering and scaling in the deployment pipeline
-
-How to Use
-The deployed model allows users to:
-
-Select a target column
-
-Train a classification model on the Naukri dataset
-
-Input features (company, experience, job post date, etc.)
-
-Receive predictions about job URLs
-
-Conclusion
-This analysis provides valuable insights into the current job market trends on Naukri.com, particularly highlighting:
-
-The dominance of finance and analytics roles
-
-The importance of technical and financial skills
-
-The concentration of opportunities in major metro cities
-
-The effectiveness of Random Forest models for this classification task
-
-The project demonstrates the importance of thorough data preprocessing and exploratory analysis before model building, and shows how machine learning can be applied to job market analysis.
-
+This version uses **bold headings** (**`** **`) for better readability while keeping the structure clean and professional. Let me know if you'd like any refinements!
