@@ -1,5 +1,8 @@
 
-📊 Naukri Job Market Analysis 
+# **📊 Naukri Job Market Analysis**  
+# **Project Overview**
+This project analyzes job postings from Naukri.com to uncover trends in hiring patterns, in-demand skills, salary distributions, and experience requirements. The goal is to provide data-driven insights for job seekers and HR professionals to make informed career and recruitment decisions.
+
 
 
 ---
@@ -92,38 +95,12 @@
 
 ---
 
-## **📂 Repository Structure**  
-```
-📁 Naukri_Job_Analysis/  
-├── data/  
-│   └── Naukri.csv  
-├── notebooks/  
-│   ├── Data_Preprocessing.ipynb  
-│   ├── EDA.ipynb  
-│   └── Model_Training.ipynb  
-├── models/  
-│   └── random_forest_model.pkl  
-├── app/  
-│   └── streamlit_app.py  
-└── README.md  
+
 ```
 
 ---
 
-## **🔗 Get Started**  
-```bash
-streamlit run app/streamlit_app.py
-```
 
----
-
-**📧 Contact:** [Your Email] | **🔗 LinkedIn:** [Your Profile]  
-
----  
-
-🚀 **Happy Job Hunting!** 🚀  
-
----
 
 ### **Key Highlights**  
 ✅ **Finance & Analytics roles dominate**  
@@ -133,4 +110,3 @@ streamlit run app/streamlit_app.py
 
 ---
 
-This version uses **bold headings** (**`** **`) for better readability while keeping the structure clean and professional. Let me know if you'd like any refinements!
